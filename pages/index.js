@@ -33,6 +33,7 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { mindata }, // will be passed to the page component as props
+    props: { mindata },
+    revalidate: 1,
   };
 }
