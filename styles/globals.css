@@ -1,16 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Spartan:wght@400;700&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  padding: 3px 6px;
 }
 
 a {
-  color: inherit;
+  color: #4b1eaa;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+.total {
+  text-align: center;
+  padding: 2px 10px;
+}
+.totalmapdiv svg {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+.totalinfo {
+  font-weight: 500;
+  background-color: white;
+  margin: 50px 20px;
+  padding: 8px;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 19px 4px 51.46px 10.54px rgba(0, 0, 0, 0.17);
+}
+.horizontotal {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.horizontotal p {
+  font-weight: 700;
+  padding: 2px 5px !important;
+}
+.horizontotal span {
+  font-weight: 200;
+  color: black;
+}
+.stateCard-parent {
+  background-color: white;
+  margin: 50px 20px;
+  padding: 8px;
+  font-size: 0.9 rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 19px 4px 51.46px 10.54px rgba(0, 0, 0, 0.17);
+  /* box-shadow: 0.2rem 0.8rem 1.6rem rgb(228, 194, 194); */
+}
+.stateCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-items: center;
+}
+.death,
+.active,
+.confirm,
+.recvr,
+.vaccine,
+.tested,
+.popu,
+.dist {
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+.death p,
+.active p,
+.confirm p,
+.recvr p {
+  padding: 0;
+  margin: 0;
+}
+
+.delta {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: flex-end;
+  margin-bottom: 3px;
+}
+
+#ddeath {
+  color: #6c757d;
+}
+
+#drecvr {
+  color: #29a745;
+}
+#dconfirm {
+  color: red;
+}
+
+.death {
+  background-color: #f6f6f7;
+  color: #6c757d;
+}
+.active {
+  background-color: #eff7ff;
+  color: #007bff;
+}
+.recvr {
+  background-color: #e5f4e8;
+  color: #29a745;
+}
+.confirm {
+  background-color: #ffdfe6;
+  color: red;
+}
+.vaccine {
+  background-color: #e3e3f3;
+  color: #4b1eaa;
+}
+.tested {
+  background-color: #faf7f4;
+  color: #b6854d;
+}
+.popu {
+  background-color: #fff4d6;
+  color: #fd7e14;
+}
+.dist {
+  background-color: #f6f6f7;
+}
+.stateCard span {
+  color: black;
+  font-weight: 300;
+}
+.stateCard p {
+  font-weight: 600;
+  padding: 2px 5px;
+  font-size: 0.97rem;
+}
+
+.testvacpop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.testvacpop svg {
+  display: inline-block;
+  font-size: 1rem;
+}
+.testvacpop span {
+  font-weight: 700;
+}
+
+.mapdiv svg {
+  width: 98%;
+  margin: auto;
+  padding: 10px;
+}
+
+#click {
+  font-size: 0.7rem;
+  font-weight: 200;
+  text-align: right;
+}
+
+#click svg {
+  font-size: 0.9rem;
+}
+
+.cardfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+.cardfooter svg {
+  vertical-align: middle;
+  display: inline-block;
+}
+#lastupdated {
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+#statelink {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+#statelink:hover {
+  cursor: pointer;
+  color: #4b1eaa;
+}
+.table {
+  font-size: 0.8rem;
+  text-align: left;
+  overflow-x: scroll;
+}
+table {
+  width: 100%;
+  font-weight: 400;
+}
+th,
+td {
+  padding: 5px;
+}
+.tablehead div {
+  margin: 2px;
+}
+.tablehead p {
+  margin: 2px;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .totalmapdiv svg {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .stateInfo {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .totalmapdiv svg {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .stateInfo {
+    width: 40%;
+  }
 }
