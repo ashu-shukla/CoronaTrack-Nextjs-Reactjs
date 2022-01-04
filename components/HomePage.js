@@ -4,6 +4,7 @@ import StateCard from "./StateCard";
 import { sortmindata } from "./sortmindata";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Footer from "./Footer";
+import Banner from "./alertBanner";
 
 export default function HomePage({ mindata }) {
   const [hasMore, setMore] = useState(true);
@@ -17,6 +18,7 @@ export default function HomePage({ mindata }) {
   };
   return (
     <div>
+      <Banner />
       <div style={{ padding: "10px" }}>
         <h1 style={{ textAlign: "center" }}>Coronavirus India Tracker</h1>
         <p style={{ padding: 10, fontSize: "0.8rem", textAlign: "center" }}>
